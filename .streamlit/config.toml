@@ -1,0 +1,13 @@
+[theme]
+base="dark"
+primaryColor="#4b6bff"
+font="monospace"
+
+
+#=-Exemplo de configuração pagina-=#
+#[theme]
+#primaryColor="#FF4B4B"
+#backgroundColor="#FFFFFF"
+#secondaryBackgroundColor="#F0F2F6"
+#textColor="#31333F"
+#font="sans serif"
