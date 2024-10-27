@@ -83,20 +83,18 @@ with col_tabela:
 
 
 with col_dashboard:
-    st.header("")
+    #st.header("")
     # Create the pie chart
     fig, ax = plt.subplots(figsize=(3, 3))
-
-
     # Create the legend patches
     patches = [
     mpatches.Patch(color="#66b3ff", label="Ações"),
     mpatches.Patch(color="#ffcc99", label="FIIS"),
     mpatches.Patch(color="#ff6666", label="Renda Fixa")
     ]
-
+    
     # Add the legend to the chart
-    plt.legend(handles=patches, loc="best", bbox_to_anchor=(1.0, 1.0), title="")   
+    plt.legend(handles=patches, loc="best", bbox_to_anchor=(0.7, 1.0), title="")   
 
     # Dados para o gráfico de pizza
     labels = ["Ações", "FIIS", "Renda Fixa"]
@@ -108,10 +106,10 @@ with col_dashboard:
         wedgeprops={"edgecolor": "black", "linewidth": 1, "antialiased": True})
 
     # Set the aspect ratio to make the pie chart circular
-    ax.axis("auto")
+    ax.axis("equal")
 
     # Add a title to the chart
-    ax.set_title("Minha Rodela - Ativos", fontsize=20)
+    #ax.set_title("Minha Rodela - Ativos", fontsize=20)
 
     # Remove the white background
     fig.patch.set_alpha(0) 
